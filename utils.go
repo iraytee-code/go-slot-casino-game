@@ -18,7 +18,7 @@ func GetWelcome() string {
 
 func GetBet(balance uint) uint {
 	var bet uint
-	for true {
+	for {
 		fmt.Printf("Enter your bet or 0 to quit (balance: $%d): ", balance)
 		fmt.Scan(&bet)
 

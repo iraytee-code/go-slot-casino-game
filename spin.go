@@ -32,7 +32,7 @@ func GetSpin(reel []string, rows int, cols int) [][]string {
 		selected := map[int]bool{}
 
 		for row := 0; row < rows; row++ {
-			for true {
+			for {
 				randomIndex := getRandomNumber(0, len(reel)-1)
 				_, exists := selected[randomIndex]
 				if !exists {

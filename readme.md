@@ -39,7 +39,7 @@ cd go-slot-machine
 2. Build the game:
 
 ```bash
-go mod init `<name>`
+go mod init casino
 
 ```
 
