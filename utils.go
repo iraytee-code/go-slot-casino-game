@@ -27,6 +27,12 @@ func GetBet(balance uint) uint {
 		} else {
 			break
 		}
+
+		if bet == 0 {
+			fmt.Println("Thank you for playing. Goodbye!")
+			break
+		}
+
 	}
 	return bet
 

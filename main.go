@@ -26,13 +26,18 @@ func main() {
 	fmt.Println("Game starts now!", name)
 	var balance uint
 	fmt.Println("Enter your deposit amount")
+	fmt.Println("Minimum deposit amount is $50")
 	fmt.Scan(&balance)
+	if balance < 50 {
+		fmt.Println("Insufficient funds. Exiting the game.")
+		return
+	}
 	balance = uint(balance)
-
 	if balance == 0 {
 		fmt.Println("Insufficient funds. Exiting the game.")
 		return
 	}
+
 	for balance > 0 {
 		bet := GetBet(balance)
 		if bet == 0 {
